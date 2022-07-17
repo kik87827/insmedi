@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="btn_tree_hide" width="42" height="95" viewBox="0 0 42 95">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#fff}.cls-4{fill:#869ecb}.cls-5{filter:url(#bg)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="imageMask" d="M0 0h42v95H0z" class="cls-1"/>
+        </clipPath>
+        <filter id="bg" width="88" height="135.841" x="-10" y="-20" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="12"/>
+            <feFlood flood-color="#283593" flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="btn_lnb_hide" class="cls-2">
+        <g id="btn_tree_hide-2" data-name="btn_tree_hide" transform="translate(26 16)">
+            <g class="cls-5" transform="translate(-26 -16)">
+                <path id="bg-2" d="M16 71.841V8a11.315 11.315 0 0 1-2.346 7.068A7.241 7.241 0 0 1 8 18v44c4.342 0 7.931 4.415 8 9.841zM8 18a8 8 0 0 0-8 8v28a8 8 0 0 0 8 8z" class="cls-3" data-name="bg" transform="translate(26 8)"/>
+            </g>
+            <path id="dotted" d="M3 22.5A1.5 1.5 0 1 0 1.5 24 1.5 1.5 0 0 0 3 22.5zm0-7A1.5 1.5 0 1 0 1.5 17 1.5 1.5 0 0 0 3 15.5zm0-7A1.5 1.5 0 1 0 1.5 10 1.5 1.5 0 0 0 3 8.5zm0-7A1.5 1.5 0 1 0 1.5 3 1.5 1.5 0 0 0 3 1.5z" class="cls-4" transform="translate(6.5 20)"/>
+        </g>
+    </g>
+</svg>

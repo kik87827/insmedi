@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ico_page_start" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(255,0,0,0);opacity:.102}.cls-2{fill:#797c94}
+        </style>
+    </defs>
+    <path id="_ico_area" d="M0 0h16v16H0z" class="cls-1" data-name="* ico area"/>
+    <path id="ico_page_end" d="M498.666 224.009v8l-6.667-4z" class="cls-2" transform="translate(-486.666 -220.009)"/>
+    <path id="Rectangle_77" d="M0 0h2v8H0z" class="cls-2" data-name="Rectangle 77" transform="translate(4 4)"/>
+</svg>
