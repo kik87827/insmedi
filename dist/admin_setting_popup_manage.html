@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1280" />
+	<link rel="stylesheet" href="./admin/css/reset.css" />
+	<link rel="stylesheet" href="./admin/css/layout.css" />
+	<link rel="stylesheet" href="./admin/css/jquery-ui.css" />
+	<link rel="stylesheet" href="./admin/css/contents.css" />
+	<script src="./admin/js/jquery-1.12.4.min.js"></script>
+	<script src="./admin/js/iscroll.js"></script>
+	<script src="./admin/js/jquery-ui.js"></script>
+	<script src="./admin/js/ui.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- header_z -->
+		<div class="header_z">
+			<h1 class="hd_tit"><a href="#" class="hd_tit_logo"><img src="./admin/images/toplogo.png" alt="인스메디"></a></h1>
+			<div class="hd_gut_w">
+				<div class="hd_gm_list_w">
+					<div class="hd_gm_list">
+						<a href="#" class="hd_gm" id="hd_gm01"><span class="hd_gm_in">신청내역 관리</span></a>
+						<a href="#" class="hd_gm" id="hd_gm02"><span class="hd_gm_in">회원 관리</span></a>
+						<a href="#" class="hd_gm" id="hd_gm03"><span class="hd_gm_in">게시판 관리</span></a>
+						<a href="#" class="hd_gm" id="hd_gm04"><span class="hd_gm_in">설정</span></a>
+						<a href="#" class="hd_gm" id="hd_gm05"><span class="hd_gm_in">로그 관리</span></a>
+					</div>
+				</div>
+				<div class="hd_util_w">
+					<a href="javascript:;" class="hd_util_item">
+						<span class="util_men_ico" style="background-image:url(./admin/images/util_logosample.png)"></span>
+						<span class="util_men"><span class="utm_sym">관리자</span>님</span>
+					</a>
+					<div class="hd_util_bullon">
+						<ul class="hd_uting_vlist">
+							<li><a href="#" class="hd_uting">로그아웃</a></li>
+							<li><a href="#" class="hd_uting">정보수정</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // header_z -->
+		<!-- template -->
+		<div class="ptem_z">
+			<!-- ptleft_z -->
+			<div class="ptleft_z">
+				<div class="ptleft_in">
+					<div class="ptltit">설정</div>
+					<div class="ptlm_list_w">
+						<ul class="ptlm_list">
+							<li id="ptlm01"><a href="#" class="ptlm">약관 관리</a></li>
+							<li id="ptlm02"><a href="#" class="ptlm">SMS발송 내역</a></li>
+							<li id="ptlm03"><a href="#" class="ptlm">팝업 관리</a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn_ptog" id="ptog_fold"><span class="hdtext">접기</span></button>
+			</div>
+			<!-- // ptleft_z -->
+			<!-- ptcontents_z -->
+			<div class="ptcontents_z">
+				<button type="button" class="btn_ptog type2" id="ptog_open"><span class="hdtext">열기</span></button>
+				<div class="ptcont_w">
+					<div class="ptsubmap_low">
+						<ul class="ptsubmap_hlist">
+							<li class="type2"><a href="#" class="ptsubmap_home"></a></li>
+							<li><a href="#" class="ptsubmap">설정</a></li>
+							<li><a href="#" class="ptsubmap">팝업 관리</a></li>
+						</ul>
+					</div>
+					<div class="ptcont_zone">
+						<div class="ptcont_titlow">
+							<h2 class="ptcont_tit">팝업 관리</h2>
+						</div>
+						<div class="ptcont_contlow">
+							내용이 들어갑니다.
+						</div>
+					</div>
+				</div>
+				<footer class="ptfooter_wrap">
+					<div class="ptfooter_both">
+						<div class="ptcopy_zone">
+							<span class="ptcopy_intext">Copyright &copy; 2022</span>
+							<span class="ptcopy_intext2">의료자문 인스메디.</span>
+							<span class="ptcopy_intext3">All rights reserved.</span>
+						</div>
+						<div class="ptelse_zone">
+							<strong class="ptelse_label">Version</strong>
+							<span class="ptelse_value">3.0</span>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<!-- // ptcontents_z -->
+		</div>
+		<!-- template -->
+		<script>
+			Insmedi.menuRock("#hd_gm04 , #ptlm03");
+		</script>
+	</div>
+</body>
+
+</html>

@@ -44,10 +44,11 @@ Insmedi = {
 	/* 서브메뉴 고정 함수(rock) */
 	menuRock : function(target){
 		$(function(){
+			console.log(target)
 			if($(target).length){
-				if($(target).parents(".pttm_list_w").length){
-					$(target).parents(".pttm_list_w").prev(".ptlm.has_tog").addClass("fold");
-					$(target).parents(".pttm_list_w").show();
+				if($(target).find(".pttm_list_w").length){
+					$(target).find(".ptlm.has_tog").addClass("fold");
+					$(target).find(".pttm_list_w").show();
 					setTimeout(function(){
 						$(window).trigger("resize");
 					},50);

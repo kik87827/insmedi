@@ -84,6 +84,7 @@
 .btn_fullsubmit_w > *{margin:0 3px;}
 .btn_quadobj{display:inline-block;font-size:14px;border-radius:5px;padding:12px 20px;background:#f8f8f8;color:#000;border:1px solid #ddd;line-height:1;}
 .btn_quadobj.dtype2{border-color:#3d3e51;background:#3d3e51;color:#fff;}
+.btn_quadobj.dtype3{border-color:#8d654e;background:#8d654e;color:#fff;}
 
 
 /* member */

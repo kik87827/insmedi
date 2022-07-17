@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('./include/admin_head.html')
+</head>
+<body class="front_body">
+	<div class="page_wrap">
+		@@include('./include/admin_header.html')
+		<!-- template -->
+		<div class="ptem_z">
+			<!-- ptleft_z -->
+			<div class="ptleft_z">
+				<div class="ptleft_in">
+					<div class="ptltit">게시판 관리</div>
+					<div class="ptlm_list_w">
+						<ul class="ptlm_list">
+							<li id="ptlm01"><a href="#" class="ptlm">공지사항</a></li>
+							<li id="ptlm02"><a href="#" class="ptlm">Q&amp;A</a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn_ptog" id="ptog_fold"><span class="hdtext">접기</span></button>
+			</div>
+			<!-- // ptleft_z -->
+			<!-- ptcontents_z -->
+			<div class="ptcontents_z">
+				<button type="button" class="btn_ptog type2" id="ptog_open"><span class="hdtext">열기</span></button>
+				<div class="ptcont_w">
+					<div class="ptsubmap_low">
+						<ul class="ptsubmap_hlist">
+							<li class="type2"><a href="#" class="ptsubmap_home"></a></li>
+							<li><a href="#" class="ptsubmap">게시판 관리</a></li>
+							<li><a href="#" class="ptsubmap">공지사항</a></li>
+						</ul>
+					</div>
+					<div class="ptcont_zone">
+						<div class="ptcont_titlow">
+							<h2 class="ptcont_tit">공지사항</h2>
+						</div>
+						<div class="ptcont_contlow">
+							내용이 들어갑니다.
+						</div>
+					</div>
+				</div>
+				@@include('./include/admin_footer.html')
+			</div>
+			<!-- // ptcontents_z -->
+		</div>
+		<!-- template -->
+		<script>
+			Insmedi.menuRock("#hd_gm03 , #ptlm01");
+		</script>
+	</div>
+</body>
+</html>
