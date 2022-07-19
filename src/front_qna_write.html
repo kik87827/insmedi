@@ -23,8 +23,74 @@
 							<li><a href="#" class="pagemap_menu emp"><span class="pagemap_menu_text">Q&A</span></a></li>
 						</ul>
 					</div>
-					<div class="sub_contents">
-						내용이 들어갑니다.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<div class="sub_contents type2">
+						<div class="form_tb_w">
+							<table class="form_tb">
+								<tbody>
+									<tr>
+										<th><span class="form_label">작성자</span></th>
+										<td><input type="text" class="form_input sm_wid"></td>
+									</tr>
+									<tr>
+										<th><span class="form_label">제목</span></th>
+										<td>
+											<div class="form_inwrap">
+												<div class="inwrap_long">
+													<input type="text" class="form_input">
+												</div>
+												<div class="inwrap_short">
+													<div class="chkrd_item">
+														<input type="checkbox" class="chkrd" id="chk_docu">
+														<label for="chk_docu" class="chkrd_label">공지사항</label>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="form_label">내용</span></th>
+										<td>
+											<div style="background:#ddd;display:flex;height:200px;justify-content: center;align-items: center;font-weight:500;color:#000">
+												에디터
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="form_label">비밀번호</span></th>
+										<td>
+											<div class="form_inwrap half_wid">
+												<div class="inwrap_long">
+													<input type="password" class="form_input">
+												</div>
+												<div class="inwrap_short">
+													<div class="chkrd_item">
+														<input type="checkbox" class="chkrd" id="chk_password">
+														<label for="chk_password" class="chkrd_label">비밀글</label>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="form_label">파일</span></th>
+										<td>
+											<div class="file_container">
+												<div class="file_control"><button type="button" class="btn_controlbox">파일추가</button></div>
+												<div class="file_list">
+													<div class="file_low">
+														<input type="file" class="file_formitem">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btn_submitbox_w">
+							<a href="#" class="btn_submitbox">취소</a>
+							<a href="#" class="btn_submitbox type2">작성완료</a>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -32,9 +32,9 @@ fieldset legend ,
 table caption {display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
 textarea{font-family: 'Nanum Gothic';color:#000;border:1px solid #c8c8c8;-webkit-appearance: none;-moz-appearance: none;-webkit-border-radius: 0;}
 
-input:focus + label{
+/* input:focus + label{
     outline: 1px dotted #767676;
-}
+} */
 ::-webkit-input-placeholder{color:#a0a0a0;font-family: 'Nanum Gothic';}
 ::-moz-input-placeholder{color:#a0a0a0;font-family: 'Nanum Gothic';}
 :-ms-input-placeholder{color:#a0a0a0 !important;font-family: 'Nanum Gothic';}
