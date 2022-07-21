@@ -157,7 +157,7 @@
 }
 
 
-.ui-datepicker select:focus{border-color:#dd5644;}
+/* .ui-datepicker select:focus{border-color:#dd5644;} */
 .ui-datepicker select{font-size:14px !important;border-radius:2px;margin:0 3px;vertical-align:middle;box-sizing:border-box;font-family: 'Noto Sans Korean';color:#111;padding: 0 32px 1px 8px;height:28px;min-width:60px;border:1px solid #cacaca;
 background: #fff url("../images/ico_arrow_d_cus.svg") no-repeat 100% 50%;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .msie8 .ui-datepicker select{background-image:none;padding:0 0 0 5px;}
@@ -369,7 +369,7 @@ background: #fff url("../images/ico_arrow_d_cus.svg") no-repeat 100% 50%;-webkit
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	background: #dd5644;
+	background: #3d3e51;
 	color: #fff !important;
 	border-radius:100%;
 	min-width:8px;text-align:center;

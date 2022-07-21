@@ -14,33 +14,43 @@ Insmedi = {
 				$("html").removeClass("touchmode");
 			}
 			funcThis.layoutFunc();
+			funcThis.formFunc();
+			funcThis.datapickerCall();
 			funcThis.dimLayerControl();
 		});
 		$(window).on("load",function(){
 			
 		});
 	},
-	// datapicker : function(){
-	// 	var $datepicker = $(".calendar_call");
-	// 	if($datepicker.length){
-	// 		$datepicker.each(function(){
-	// 			var $dateThis = $(this);
-	// 			$(this).datepicker({
-	// 				monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-	// 				dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-	// 				changeMonth: true,
-	// 				changeYear: true,
-	// 				dateFormat: 'yy-mm-dd'
-	// 			});
-	// 		});
-	// 		var $windowWidth = 0;
-	// 		$(window).on("resize",function(){
-	// 			if($windowWidth == $(window).width() && touchstart){return;}
-	// 			$datepicker.datepicker("hide");
-	// 			$windowWidth = $(window).width();
-	// 		});
-	// 	}
-	// },
+	formFunc(){
+		$(document).on("change",".fsel",function(){
+			var $t = $(this),
+				$t_option = $t.children("option:selected");
+			if($t_option[0].value === "0"){
+				$t.addClass("ready_fsel");
+			}else{
+				$t.removeClass("ready_fsel");
+			}
+		});
+	},
+	datapickerCall : function(){
+		var $datepicker = $(".calendar_call");
+		if($datepicker.length){
+			$datepicker.datepicker({
+				monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+				dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd'
+			});
+			var $windowWidth = 0;
+			$(window).on("resize",function(){
+				if($windowWidth == $(window).width() && touchstart){return;}
+				$datepicker.datepicker("hide");
+				$windowWidth = $(window).width();
+			});
+		}
+	},
 	/* 서브메뉴 고정 함수(rock) */
 	menuRock : function(target){
 		$(function(){
