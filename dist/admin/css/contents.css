@@ -7,6 +7,16 @@
 .mt40{margin-top:40px !important;}
 .mt50{margin-top:50px !important;}
 .mt60{margin-top:60px !important;}
+.wid_10per{width:10% !important;}
+.wid_20per{width:20% !important;}
+.wid_30per{width:30% !important;}
+.wid_40per{width:40% !important;}
+.wid_50per{width:50% !important;}
+.wid_60per{width:60% !important;}
+.wid_70per{width:70% !important;}
+.wid_80per{width:80% !important;}
+.wid_90per{width:90% !important;}
+.wid_100per{width:100% !important;}
 
 /* 공통 alert confirm */
 .btn_guide{display:inline-block;font-size:16px;padding:15px 30px;border:1px solid #ddd;}
@@ -124,7 +134,7 @@ input[type="checkbox"].chkrd_s:checked{background-color:#8d654e;}
 .dimlayer_z.active.motion .fullpop_dim{background:rgba(0,0,0,0.65);}
 .fullpop_item_wrap{}
 .fullpop_item{
-    box-sizing: border-box;z-index:20; max-width:600px;margin:30px auto; max-height:calc(100% - 60px); background:#fff; position:relative; display:flex; flex-direction: column;
+    box-sizing: border-box;z-index:20; max-width:900px;margin:30px auto; max-height:calc(100% - 60px); background:#fff; position:relative; display:flex; flex-direction: column;
     border-radius:20px 20px 10px 10px; width:100%; opacity:0; transform: translateY(-30%); min-width:0;
 }
 .fullpop_item.wtype2{max-width:520px;}
@@ -216,6 +226,11 @@ input.sfinput{border:1px solid #c5c9d5;border-radius:3px;box-sizing: border-box;
 .inline_formgroup{display:flex;align-items: center;}
 .inline_formgroup > *{}
 .inline_formgroup > *:last-child{}
+.inline_formgroup.has_margin{}
+.inline_formgroup.has_margin > *{margin-right:10px;} 
+.inline_formgroup.has_margin > *:last-of-type{margin-right:0;} 
+.inline_formlong{flex:1;}
+.inline_formshort{flex:0;}
 .inline_form{}
 .inline_form .fint{}
 .inline_else{}
@@ -284,6 +299,7 @@ td.nodata_td{padding:30px;background:#fff !important;}
 .btn_group{display:flex;align-items: center;}
 .btn_group .btn_box{margin-right:5px;}
 .btn_group.pos_bottom{margin-top:30px;}
+.btn_group.atype2{text-align: center;justify-content: center;}
 
 /* form table */
 .formviewer_tb{width:100%;border-bottom:1px solid #e3e3e3;}
@@ -303,6 +319,8 @@ td.nodata_td{padding:30px;background:#fff !important;}
 .block_vtitlow{display:flex;justify-content: space-between;align-items: flex-end;}
 .block_vtit{font-size:16px;font-weight:500;color:#222;position:relative;padding-left:16px;line-height:1;}
 .block_vtit:before{display:block;content:'';width:6px;height:6px;background:transparent;border:3px solid #3d3e51;border-radius:100%;position:absolute;top:4px;left:0;}
+.bullet_tit{font-size:16px;font-weight:500;color:#222;position:relative;padding-left:16px;line-height:1;margin-bottom:10px;}
+.bullet_tit:before{display:block;content:'';width:6px;height:6px;background:transparent;border:3px solid #3d3e51;border-radius:100%;position:absolute;top:4px;left:0;}
 .block_vcontlow{margin-top:10px;}
 
 .fitem_wrap{display:flex;flex-wrap:wrap;position:relative;top:-5px;}
