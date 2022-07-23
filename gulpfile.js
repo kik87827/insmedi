@@ -14,6 +14,7 @@ gulp.task('htmlbeautify', function () {
 	.pipe(gulp.dest('./dist/'))
 });
 
+
 gulp.task('fileinclude',function(){
 	gulp.src(['./src/**.html'],{base : "./src/"})
 	.pipe(fileinclude({
@@ -35,5 +36,7 @@ gulp.task('webserver',function(){
 });
 
 gulp.task('watch', function () {
-	gulp.watch(['./src/**.html', './src/*/**.html'], ["fileinclude"]);
+	gulp.watch(['./src/**.html'], ["fileinclude"],function(cb){
+		cb();
+	});
 });

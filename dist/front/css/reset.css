@@ -94,3 +94,13 @@ strong{font-weight:500}
 .touchDisimport{touch-action: none;overflow:hidden !important;position:relative;}
 .ellips{display:inline-block; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
 .hdtext{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
+.mb20{margin-bottom:20px !important;}
+.fsL{font-size:1.29em !important;}/* 18px */
+.fsS{font-size:.929em !important;}/* 13px */
+.fsM{font-size:1.143em !important;}/* 16px */
+.fsL{font-size:1.29em !important;}/* 18px */
+.fsXL{font-size:1.43em !important;}/* 20px */
+.fsn{font-style:normal !important;}
+.fsi{font-style:italic !important;}
+.fwn{font-weight:normal !important;}
+.fwb{font-weight:500 !important;}
