@@ -69,13 +69,25 @@
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">회사명</span></th>
 															<td colspan="3">
-																<input type="text" class="form_input wid_per50">
+																<input type="text" class="form_input wid_per50" value="인스메디">
 															</td>
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">주소</span></th>
 															<td colspan="3">
-																
+																<div class="multi_inform_wrap">
+																	<div class="multi_inform">
+																		<div class="tdinner_item_wrap">
+																			<div class="tdinner_item"><input type="text" class="form_input mid_pix_wid" disabled value="06132"></div>
+																		</div>
+																	</div>
+																	<div class="multi_inform">
+																		<input type="text" class="form_input" placeholder="기본 주소" disabled value="서울 강남구 테헤란로25길 20">
+																	</div>
+																	<div class="multi_inform">
+																		<input type="text" class="form_input" placeholder="나머지 주소" value="현대벤처텔 1506호 인스메디">
+																	</div>
+																</div>
 															</td>
 														</tr>
 													</tbody>
@@ -94,29 +106,35 @@
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">자문환자명</span></th>
 															<td>
-																
+																<input type="text" class="form_input instyle_wid">
 															</td>
 															<th><span class="etri reverse">*</span><span class="form_label">생년월일</span></th>
 															<td>
-																
+																<div class="tdinner_item_wrap">
+																	<div class="tdinner_item"><input type="text" class="form_input instyle_wid"></div>
+																	<div class="tdinner_item">
+																		<p class="inform_copy2">숫자만 입력해 주세요. ex)19900907</p>
+																	</div>
+																</div>
 															</td>
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">주요진단명</span></th>
 															<td colspan="3">
-																
+																<input type="text" class="form_input">
 															</td>
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">보험사담당자/사고번호</span></th>
 															<td colspan="3">
-																
+																<input type="text" class="form_input">
+																<p class="etri_para"><span class="etri_para_in">보험사담당자/사고번호가 없을 경우 반드시 ‘없음’으로 입력해 주세요.</span></p>
 															</td>
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">쟁점사항 및 기타</span></th>
 															<td colspan="3">
-																
+																<textarea rows="10" cols="10" class="textarea_item"></textarea>
 															</td>
 														</tr>
 													</tbody>
@@ -134,14 +152,42 @@
 													<tbody>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">계약사항</span></th>
-															<td>
-																
+															<td class="has_table">
+																<!-- inner table -->
+																<div class="inner_tb">
+																	<div class="inner_thead">
+																		<div class="inner_tr">
+																			<div class="inner_cell wid_short">보험구분</div>
+																			<div class="inner_cell wid_short">계약일자</div>
+																			<div class="inner_cell wid_long">보험명</div>
+																		</div>
+																	</div>
+																	<div class="inner_tbody">
+																		<div class="inner_tr">
+																			<div class="inner_cell wid_short">
+																				<select class="form_select wid_per100"><option>선택</option></select>
+																			</div>
+																			<div class="inner_cell wid_short">
+																				<input type="text" class="form_input calendar_call">
+																			</div>
+																			<div class="inner_cell wid_long">
+																				<div class="tdinner_item_wrap">
+																					<div class="tdinner_long"><input type="text" class="form_input"></div>
+																					<div class="tdinner_short">
+																						<a href="javascript:;" class="btn_smbox">+ 추가</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- // inner table -->
 															</td>
 														</tr>
 														<tr>
 															<th><span class="form_label">계약내역</span></th>
 															<td>
-																
+																내용이 들어갑니다.
 															</td>
 														</tr>
 													</tbody>
@@ -155,31 +201,41 @@
 										<div class="form_vertical_content_wrap">
 											<!-- 내용 -->
 											<div class="form_tb_w">
-												<table class="form_tb dtype2">
-													<tbody>
+												<table class="form_tb dtype2 ftype2">
+													<thead>
 														<tr>
 															<th colspan="4" class="dtype2">1차 병원 치료 내용</th>
 														</tr>
+													</thead>
+													<tbody>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">병원명</span></th>
 															<td colspan="3">
-																
+																<input type="text" class="form_input instyle_wid">
 															</td>
 														</tr>
 														<tr>
 															<th><span class="form_label">치료기간(입원)</span></th>
 															<td>
-																
+																<div class="tdinner_item_wrap type2">
+																	<div class="tdinner_item"><input type="text" class="form_input calendar_call"></div>
+																	<div class="tdinner_item"><span class="inner_elsetext">~</span></div>
+																	<div class="tdinner_item"><input type="text" class="form_input calendar_call"></div>
+																</div>
 															</td>
 															<th><span class="form_label">치료기간(통원)</span></th>
 															<td>
-																
+																<div class="tdinner_item_wrap type2">
+																	<div class="tdinner_item"><input type="text" class="form_input calendar_call"></div>
+																	<div class="tdinner_item"><span class="inner_elsetext">~</span></div>
+																	<div class="tdinner_item"><input type="text" class="form_input calendar_call"></div>
+																</div>
 															</td>
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">주요치료내용</span></th>
 															<td colspan="3">
-																
+																<textarea rows="10" cols="10" class="textarea_item"></textarea>
 															</td>
 														</tr>
 													</tbody>
@@ -198,13 +254,18 @@
 														<tr>
 															<th><span class="form_label">질문</span></th>
 															<td>
-																
+																<div class="tdinner_item_wrap">
+																	<div class="tdinner_long"><input type="text" class="form_input"></div>
+																	<div class="tdinner_short">
+																		<a href="javascript:;" class="btn_smbox">+ 추가</a>
+																	</div>
+																</div>
 															</td>
 														</tr>
 														<tr>
 															<th><span class="form_label">질문내역</span></th>
 															<td>
-																
+																내용이 들어갑니다.
 															</td>
 														</tr>
 													</tbody>
@@ -225,7 +286,15 @@
 												<tr>
 													<th><span class="form_label">진단서</span></th>
 													<td>
-														
+														<div class="tdinner_item_wrap">
+															<div class="tdinner_long">
+																<input type="file" class="file_formitem">
+															</div>
+															<div class="tdinner_short">
+																<a href="javascript:;" class="btn_smbox">+ 추가</a>
+																<a href="javascript:;" class="btn_smbox type2">- 삭제</a>
+															</div>
+														</div>
 													</td>
 												</tr>
 											</tbody>
@@ -240,7 +309,15 @@
 														<p class="form_label_sub">후유장해 관련 신청시에는 <br>장해등급표를 이미지 파일로 첨부</p>
 													</th>
 													<td>
-														
+														<div class="tdinner_item_wrap">
+															<div class="tdinner_long">
+																<input type="file" class="file_formitem">
+															</div>
+															<div class="tdinner_short">
+																<a href="javascript:;" class="btn_smbox">+ 추가</a>
+																<a href="javascript:;" class="btn_smbox type2">- 삭제</a>
+															</div>
+														</div>
 													</td>
 												</tr>
 											</tbody>
@@ -255,7 +332,9 @@
 														<p class="form_label_sub">CD에 저장된 파일 및 폴더를 <br>모두 첨부</p>	
 													</th>
 													<td>
-														
+														<div style="display:flex;align-items: center;justify-content: center;background:#ddd;height:300px;">
+															드래그앤드랍
+														</div>
 													</td>
 												</tr>
 											</tbody>
@@ -267,7 +346,15 @@
 												<tr>
 													<th><span class="form_label">기타</span></th>
 													<td>
-														
+														<div class="tdinner_item_wrap">
+															<div class="tdinner_long">
+																<input type="file" class="file_formitem">
+															</div>
+															<div class="tdinner_short">
+																<a href="javascript:;" class="btn_smbox">+ 추가</a>
+																<a href="javascript:;" class="btn_smbox type2">- 삭제</a>
+															</div>
+														</div>
 													</td>
 												</tr>
 											</tbody>
