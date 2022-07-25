@@ -78,7 +78,82 @@
 							<h2 class="ptcont_tit">접속 로그 리스트</h2>
 						</div>
 						<div class="ptcont_contlow">
-							내용이 들어갑니다.
+							<!-- sort -->
+							<div class="sort_container both_type mt20">
+								<div class="sort_cell">
+									<div class="sort_count_w">
+										<span class="sort_count_lab">총</span>
+										<span class="sort_count_current">18029</span>
+										<span class="sort_count_unit">건</span>
+									</div>
+								</div>
+								<div class="sort_cell">
+									<div class="sort_item inline_item_group">
+										<div class="inline_item">
+											<div class="inline_item_group">
+												<div class="inline_item"><input type="text" class="fint calendar_call" placeholder="시작일"></div>
+												<div class="inline_item"><span class="inline_elsetext">~</span></div>
+												<div class="inline_item"><input type="text" class="fint calendar_call" placeholder="종료일"></div>
+											</div>
+										</div>
+									</div>
+									<div class="inline_item">
+										<a href="#" class="btn_box color_type_a small_b2"><span class="btn_box_intext">검색</span></a>
+									</div>
+								</div>
+							</div>
+							<!-- // sort -->
+							<!-- table -->
+							<div class="list_table_w">
+								<table class="list_table">
+									<colgroup>
+										<col style="width:13%" />
+										<col style="width:9%" />
+										<col style="width:12%" />
+										<col style="width:11%" />
+										<col style="width:7%" />
+										<col style="width:10%" />
+										<col style="width:7%" />
+										<col style="width:10%" />
+										<col />
+									</colgroup>
+									<thead>
+										<tr>
+											<th><span class="th_item">로그번호</span></th>
+											<th><span class="th_item">아이디</span></th>
+											<th><span class="th_item">접속일시</span></th>
+											<th><span class="th_item">IP주소</span></th>
+											<th><span class="th_item">수행업무</span></th>
+											<th><span class="th_item">등급</span></th>
+											<th><span class="th_item">OS</span></th>
+											<th><span class="th_item">BROWSER</span></th>
+											<th><span class="th_item">요청URL</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="td_data">00000000000000000</span></td>
+											<td><span class="td_data">test</span></td>
+											<td><span class="td_data">2022-00-00 00:00</span></td>
+											<td><span class="td_data">121.121.121.121</span></td>
+											<td><span class="td_data">select</span></td>
+											<td><span class="td_data">최고관리자</span></td>
+											<td><span class="td_data">windows</span></td>
+											<td><span class="td_data">Google Chrome</span></td>
+											<td class="has_link"><a href="#" class="td_link">/index.php?tpf=admin/log/list</a></td>
+										</tr>
+										<tr>
+											<td class="nodata_td" colspan="9">
+												<p class="nodata_para">등록된 자료가 없습니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // table -->
+							<div class="btn_group pos_bottom">
+								<a href="javascript:;" class="btn_box medium color_type_c ico_down"><span class="btn_box_intext">엑셀 다운로드</span></a>
+							</div>
 						</div>
 					</div>
 				</div>

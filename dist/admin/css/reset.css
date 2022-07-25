@@ -74,6 +74,7 @@ textarea{resize:none;font-family: 'Noto Sans Korean';color:#5d5d5d;outline: none
 .pl10{padding-left: 10px !important;}
 .fl{float:left !important;}
 .txtleft{text-align:left !important;}
+.txtcenter{text-align:center !important;}
 .pbt20{padding-left:20px !important;padding-right:20px !important;}
 .vat{vertical-align:top !important;}
 .wp100{width:100% !important;box-sizing:border-box !important;}
