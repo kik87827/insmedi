@@ -23,6 +23,15 @@ Insmedi = {
 		});
 	},
 	formFunc(){
+		$(".ready_fsel").each(function(){
+			var $t = $(this),
+				$t_option = $t.children("option:selected");
+			if($t_option[0].value === "0"){
+				$t.addClass("ready_fsel");
+			}else{
+				$t.removeClass("ready_fsel");
+			}
+		});
 		$(document).on("change",".fsel",function(){
 			var $t = $(this),
 				$t_option = $t.children("option:selected");
@@ -54,7 +63,6 @@ Insmedi = {
 	/* 서브메뉴 고정 함수(rock) */
 	menuRock : function(target){
 		$(function(){
-			console.log(target)
 			if($(target).length){
 				if($(target).find(".pttm_list_w").length){
 					$(target).find(".ptlm.has_tog").addClass("fold");

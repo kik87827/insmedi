@@ -88,7 +88,130 @@
 							<h2 class="ptcont_tit">회원 관리</h2>
 						</div>
 						<div class="ptcont_contlow">
-							내용이 들어갑니다.
+							<div class="pctab_hlist_w">
+								<div class="pctab_hlist">
+									<a href="#" class="pctab active"><span class="pctab_in">전체보기</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">의사회원</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">일반회원</span></a>
+								</div>
+							</div>
+							<!-- sort -->
+							<div class="sort_container both_type mt20">
+								<div class="sort_cell">
+									<div class="sort_count_w">
+										<span class="sort_count_lab">총</span>
+										<span class="sort_count_current">18029</span>
+										<span class="sort_count_unit">건</span>
+									</div>
+								</div>
+								<div class="sort_cell type2">
+									<div class="sort_item inline_item_group type2">
+										<div class="inline_item"><select class="fsel ready_fsel">
+												<option value="0">선택</option>
+												<option selected>이름</option>
+											</select></div>
+										<div class="inline_item">
+											<div class="search_field">
+												<input type="text" class="input_search" placeholder="검색">
+												<button type="button" class="btn_search"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // sort -->
+							<!-- table -->
+							<div class="list_table_w">
+								<table class="list_table">
+									<colgroup>
+										<col style="width:5%;" />
+										<col style="width:10%;" />
+										<col style="width:10%;" />
+										<col />
+										<col style="width:11%;" />
+										<col style="width:11%;" />
+										<col style="width:12%;" />
+										<col style="width:9%;" />
+										<col style="width:8%;" />
+										<col style="width:8%;" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="ptype2"><span class="th_item"><input type="checkbox" class="chkrd_s"></span></th>
+											<th><span class="th_item">아이디</span></th>
+											<th><span class="th_item">이름</span></th>
+											<th><span class="th_item">휴대폰</span></th>
+											<th><span class="th_item">업종</span></th>
+											<th><span class="th_item">회사명</span></th>
+											<th><span class="th_item">가입일</span></th>
+											<th><span class="th_item">회원등급</span></th>
+											<th><span class="th_item">상태</span></th>
+											<th><span class="th_item">명령</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">test</span></td>
+											<td><span class="td_data">홍길동</span></td>
+											<td><span class="td_data">010-1111-1111</span></td>
+											<td><span class="td_data">손해사정법인</span></td>
+											<td><span class="td_data">솔로몬손해사정</span></td>
+											<td><span class="td_data">2022-07-08 00:00</span></td>
+											<td><span class="td_data">일반회원</span></td>
+											<td><span class="ing_box design_color_02">보임</span></td>
+											<td class="ptype2"><a href="javascript:;" class="btn_box small color_type_a"><span class="btn_box_intext">상세보기</span></a></td>
+										</tr>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">test<span class="r_emp">(*)</span></span></td>
+											<td><span class="td_data">홍길동</span></td>
+											<td><span class="td_data">010-1111-1111</span></td>
+											<td><span class="td_data">손해사정법인</span></td>
+											<td><span class="td_data">솔로몬손해사정</span></td>
+											<td><span class="td_data">2022-07-08 00:00</span></td>
+											<td><span class="td_data">일반회원</span></td>
+											<td><span class="ing_box design_color_02">보임</span></td>
+											<td class="ptype2"><a href="javascript:;" class="btn_box small color_type_a"><span class="btn_box_intext">상세보기</span></a></td>
+										</tr>
+										<tr>
+											<td class="nodata_td" colspan="10">
+												<p class="nodata_para">등록된 자료가 없습니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // table -->
+							<!-- paging -->
+							<div class="paging_w">
+								<a href="#" class="btn_pn prev01"><span class="hdtext">처음</span></a>
+								<a href="#" class="btn_pn prev02"><span class="hdtext">이전</span></a>
+								<ul class="pagnum_list">
+									<li class="active"><a href="#" class="pagnum">1</a></li>
+									<li><a href="#" class="pagnum">2</a></li>
+									<li><a href="#" class="pagnum">3</a></li>
+									<li><a href="#" class="pagnum">4</a></li>
+									<li><a href="#" class="pagnum">5</a></li>
+									<li><a href="#" class="pagnum">6</a></li>
+									<li><a href="#" class="pagnum">7</a></li>
+									<li><a href="#" class="pagnum">8</a></li>
+									<li><a href="#" class="pagnum">9</a></li>
+									<li><a href="#" class="pagnum">10</a></li>
+								</ul>
+								<a href="#" class="btn_pn next01"><span class="hdtext">다음</span></a>
+								<a href="#" class="btn_pn next02"><span class="hdtext">끝</span></a>
+							</div>
+							<!-- // paging -->
+							<div class="btn_group pos_bottom">
+								<div class="btn_group_cellobj">
+									<a href="javascript:;" class="btn_box medium color_type_b ico_minus"><span class="btn_box_intext">선택삭제</span></a>
+									<a href="javascript:;" class="btn_box medium color_type_a ico_plus"><span class="btn_box_intext">등록</span></a>
+								</div>
+								<div class="btn_group_cellobj">
+									<p class="copy"><span class="r_emp">(*)</span>은 비밀번호 5회이상 실패회원입니다.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

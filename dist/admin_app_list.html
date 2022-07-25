@@ -86,7 +86,176 @@
 							<h2 class="ptcont_tit">신청 리스트</h2>
 						</div>
 						<div class="ptcont_contlow">
-							내용이 들어갑니다.
+							<div class="pctab_hlist_w">
+								<div class="pctab_hlist">
+									<a href="#" class="pctab active"><span class="pctab_in">전체보기</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">의료자문</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">의료분석</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">의료번역</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">동시감정</span></a>
+								</div>
+							</div>
+							<!-- sort -->
+							<div class="sort_container both_type mt20">
+								<div class="sort_cell">
+									<div class="sort_count_w">
+										<span class="sort_count_lab">총</span>
+										<span class="sort_count_current">18029</span>
+										<span class="sort_count_unit">건</span>
+									</div>
+									<div class="sort_count_w">
+										<span class="sort_count_lab">금액총계 :</span>
+										<span class="sort_count_current r_emp b_emp">0,000,000,000</span>
+										<span class="sort_count_unit r_emp b_emp">원</span>
+									</div>
+								</div>
+								<div class="sort_cell type2">
+									<div class="sort_item">
+										<div class="chkrd_sitem">
+											<input type="checkbox" class="chkrd_s" id="history_data">
+											<label for="history_data" class="chkrd_slabel">미입금 내역</label>
+										</div>
+									</div>
+									<div class="sort_item inline_item_group">
+										<div class="inline_item"><select class="fsel ready_fsel">
+												<option value="0">선택</option>
+												<option>전체</option>
+											</select></div>
+										<div class="inline_item define_nbsp"></div>
+										<div class="inline_item">
+											<div class="inline_item_group">
+												<div class="inline_item"><input type="text" class="fint calendar_call" placeholder="시작일"></div>
+												<div class="inline_item"><span class="inline_elsetext">~</span></div>
+												<div class="inline_item"><input type="text" class="fint calendar_call" placeholder="종료일"></div>
+											</div>
+										</div>
+									</div>
+									<div class="sort_item inline_item_group type2">
+										<div class="inline_item"><select class="fsel ready_fsel">
+												<option value="0">선택</option>
+												<option>전체</option>
+											</select></div>
+										<div class="inline_item"><select class="fsel ready_fsel">
+												<option value="0">접수번호</option>
+												<option>전체</option>
+											</select></div>
+										<div class="inline_item">
+											<div class="search_field">
+												<input type="text" class="input_search" placeholder="검색">
+												<button type="button" class="btn_search"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // sort -->
+							<!-- table -->
+							<div class="list_table_w">
+								<table class="list_table">
+									<colgroup>
+										<col style="width:3%;">
+										<col style="width:7%;">
+										<col style="width:10%;">
+										<col>
+										<col style="width:8%;">
+										<col style="width:6%;">
+										<col style="width:6%;">
+										<col style="width:6%;">
+										<col style="width:6%;">
+										<col style="width:9%;">
+										<col style="width:6%;">
+										<col style="width:6%;">
+										<col style="width:6%;">
+										<col style="width:6%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="ptype2"><span class="th_item"><input type="checkbox" class="chkrd_s"></span></th>
+											<th><span class="th_item">카테고리</span></th>
+											<th><span class="th_item">접수번호</span></th>
+											<th><span class="th_item">진단명</span></th>
+											<th><span class="th_item">회사명</span></th>
+											<th><span class="th_item">담당자명</span></th>
+											<th><span class="th_item">자문환자명</span></th>
+											<th><span class="th_item">담당의사</span></th>
+											<th><span class="th_item">보험사</span></th>
+											<th><span class="th_item">등록일</span></th>
+											<th><span class="th_item">미리보기</span></th>
+											<th><span class="th_item">결제방법</span></th>
+											<th><span class="th_item">진행상태</span></th>
+											<th><span class="th_item">명령</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">의료자문</span></td>
+											<td><span class="td_data">ABCD2022070800037</span></td>
+											<td><span class="td_data">요추 제1번 골절</span></td>
+											<td><span class="td_data">KCA손해사정</span></td>
+											<td><span class="td_data">홍길동</span></td>
+											<td><span class="td_data">박*경</span></td>
+											<td><span class="td_data">장세연</span></td>
+											<td><span class="td_data">교보생명</span></td>
+											<td><span class="td_data">2022-07-08 18:16</span></td>
+											<td><a href="javascript:;" class="btn_text">미리보기</a></td>
+											<td><span class="td_data">후불</span></td>
+											<td><span class="ing_box design_ing">회신진행중</span></td>
+											<td class="ptype2"><a href="javascript:;" class="btn_box small color_type_a"><span class="btn_box_intext">상세보기</span></a></td>
+										</tr>
+										<tr>
+											<td class="nodata_td" colspan="14">
+												진행상태 전달용<br>
+												<span class="ing_box design_color_01">회신진행중</span>
+												<span class="ing_box design_color_02">접수완료</span>
+												<span class="ing_box design_color_03">접수대기</span>
+												<span class="ing_box design_color_03">답변임시저장</span>
+												<span class="ing_box design_color_04">임시저장</span>
+											</td>
+										</tr>
+										<tr>
+											<td class="nodata_td" colspan="14">
+												<p class="nodata_para">등록된 자료가 없습니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // table -->
+							<!-- paging -->
+							<div class="paging_w">
+								<a href="#" class="btn_pn prev01"><span class="hdtext">처음</span></a>
+								<a href="#" class="btn_pn prev02"><span class="hdtext">이전</span></a>
+								<ul class="pagnum_list">
+									<li class="active"><a href="#" class="pagnum">1</a></li>
+									<li><a href="#" class="pagnum">2</a></li>
+									<li><a href="#" class="pagnum">3</a></li>
+									<li><a href="#" class="pagnum">4</a></li>
+									<li><a href="#" class="pagnum">5</a></li>
+									<li><a href="#" class="pagnum">6</a></li>
+									<li><a href="#" class="pagnum">7</a></li>
+									<li><a href="#" class="pagnum">8</a></li>
+									<li><a href="#" class="pagnum">9</a></li>
+									<li><a href="#" class="pagnum">10</a></li>
+								</ul>
+								<a href="#" class="btn_pn next01"><span class="hdtext">다음</span></a>
+								<a href="#" class="btn_pn next02"><span class="hdtext">끝</span></a>
+							</div>
+							<!-- // paging -->
+							<div class="btn_group pos_bottom">
+								<div class="btn_group_cellobj">
+									<a href="javascript:;" class="btn_box medium color_type_b ico_minus"><span class="btn_box_intext">선택삭제</span></a>
+									<a href="javascript:;" class="btn_box medium color_type_a ico_bell"><span class="btn_box_intext">담당자 SMS</span></a>
+									<a href="javascript:;" class="btn_box medium color_type_a ico_bell"><span class="btn_box_intext">담당의사 SMS</span></a>
+								</div>
+								<div class="btn_group_cellobj">
+									<select class="fsel medium">
+										<option value="0">담당의사 선택</option>
+									</select>
+									<a href="javascript:;" class="btn_box medium color_type_c ico_plus"><span class="btn_box_intext">배당하기</span></a>
+									<a href="javascript:;" class="btn_box medium color_type_c ico_down"><span class="btn_box_intext">엑셀 다운로드</span></a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
