@@ -275,6 +275,7 @@ input.input_search{width:200px}
 .btn_search{}
 .else_form_text{display:inline-block;white-space: nowrap;padding:0 5px;}
 .list_table_w{}
+.list_table_w.half{max-width:50%;}
 .list_table{width:100%;border-top:1px solid #e3e3e3;table-layout: fixed;}
 .list_table th,
 .list_table td{border-bottom:1px solid #e3e3e3;}
@@ -334,12 +335,14 @@ td.nodata_td{padding:30px;background:#fff !important;}
 .btn_box[class*="ico_"] .btn_box_intext:before{display:inline-block;content:'';background-position:0 0;background-size:100% auto;background-repeat:no-repeat;margin-right:5px;position:relative;top:0.5px;}
 .btn_box.ico_down .btn_box_intext:before{width:12px;height:12px;}
 .btn_box.ico_bell .btn_box_intext:before{width:13px;height:13px;}
+.btn_box.ico_setting .btn_box_intext:before{width:10px;height:10px;}
 .btn_box.ico_minus .btn_box_intext:before,
 .btn_box.ico_plus .btn_box_intext:before{width:10px;height:10px;}
 .btn_box.ico_minus .btn_box_intext:before{background-image:url("../images/ico_minus.png");}
 .btn_box.ico_plus .btn_box_intext:before{background-image:url("../images/ico_plus.png");}
 .btn_box.ico_bell .btn_box_intext:before{background-image:url("../images/ico_bell.png");}
 .btn_box.ico_down .btn_box_intext:before{background-image:url("../images/ico_download.png");}
+.btn_box.ico_setting .btn_box_intext:before{background-image:url("../images/settings_10.svg");}
 .btn_group{display:flex;align-items: center;}
 .btn_group .btn_box{margin-right:5px;}
 .btn_group.pos_bottom{margin-top:30px;}
@@ -348,6 +351,7 @@ td.nodata_td{padding:30px;background:#fff !important;}
 .btn_group_cellobj > *{margin-right:3px !important;}
 .btn_group_cellobj > *:last-child{margin-right:0 !important;}
 .btn_group_cellobj:last-of-type{margin-right:0;}
+.btn_group .copy{}
 
 @media (max-width:1440px){
     input.input_search{width:100px;}
