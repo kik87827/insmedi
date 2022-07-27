@@ -104,8 +104,103 @@
 			</div>
 		</header>
 		<section class="middle_zone">
-			내용이 들어갑니다.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div class="main_visual_wrap">
+				<div class="swiper-container main-visual-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="main_visual bg01"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main_visual bg02"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main_visual bg03"></div>
+						</div>
+					</div>
+					<div class="swiper-pagination main_visual_paging"></div>
+				</div>
+			</div>
+			<div class="main_content_wrap">
+				<div class="mc_rows_a_zone">
+					<div class="mc_rows_pix">
+						<div class="mc_row_cell_long">
+							<h3 class="linkage_title">공지사항</h3>
+							<div class="linkage_data_list_w">
+								<ul class="linkage_data_list">
+									<li>
+										<a href="#" class="linkage_data">[인스메디] 이메일 주소 info@insmedi.co.kr</a>
+										<span class="linkage_date">2020.02.02</span>
+									</li>
+									<li>
+										<a href="#" class="linkage_data">[인스메디] 이메일 주소 info@insmedi.co.kr</a>
+										<span class="linkage_date">2020.02.02</span>
+									</li>
+									<!-- <li class="nodata_li">조회된 데이터가 없습니다.</li> -->
+								</ul>
+							</div>
+							<a href="#" class="btn_linkage_more" title="공지사항 더보기"><span class="hdtext">공지사항 더보기</span></a>
+						</div>
+						<a href="#" class="mc_row_cell_short">
+							<div class="mc_row_intext_group">
+								<span class="mc_row_intext_main">업무소개</span>
+								<span class="mc_row_intext_sub">업무소개 풍부한 진료경험과 연구를<br>바탕으로 한 최상의 의료서비스</span>
+							</div>
+						</a>
+						<div class="mc_row_cell_short bgtype2">
+							<div class="mc_row_initem">
+								<div class="mc_row_inspec">
+									<p class="inspec_main">02-3667-8701</p>
+									<p class="inspec_sub">상담시간 : 09:00~18:00 <br>(토일 공휴일 휴무)</p>
+								</div>
+							</div>
+							<div class="mc_row_initem type2">
+								<div class="mc_row_inspec">
+									<p class="inspec_main">140-011-641809</p>
+									<p class="inspec_sub">신한은행<br>(주)인스메디 박승자</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mc_rows_b_zone">
+					<div class="mc_rows_pix">
+						<div class="mc_row_cell_title">
+							<h3 class="mc_title">서비스 바로가기</h3>
+							<p class="mc_title_sub">도움이 필요한 내용을<br>신청하시면 빠른 답변드립니다.</p>
+						</div>
+						<div class="mc_row_cell_cont">
+							<ul class="mc_quickmenu_list">
+								<li>
+									<p class="mc_quick_title">의료자문</p>
+									<div class="mc_quick_ico"></div>
+									<div class="btn_quick_w"><a href="#" class="btn_quickmenu_obj">신청하기</a></div>
+								</li>
+								<li>
+									<p class="mc_quick_title">의료분석</p>
+									<div class="mc_quick_ico ico_type2"></div>
+									<div class="btn_quick_w"><a href="#" class="btn_quickmenu_obj">신청하기</a></div>
+								</li>
+								<li>
+									<p class="mc_quick_title">의료번역</p>
+									<div class="mc_quick_ico ico_type3"></div>
+									<div class="btn_quick_w"><a href="#" class="btn_quickmenu_obj">신청하기</a></div>
+								</li>
+								<li>
+									<p class="mc_quick_title">동시감정</p>
+									<div class="mc_quick_ico ico_type4"></div>
+									<div class="btn_quick_w"><a href="#" class="btn_quickmenu_obj">신청하기</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		<script>
+			$(window).on("load", function() {
+				mainvisualFunc();
+			});
+		</script>
 		<footer class="footer_zone">
 			<div class="footer_menu_wrap">
 				<div class="pix_in">

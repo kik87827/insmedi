@@ -89,6 +89,28 @@ function headerFunc(){
 	});
 }
 
+function mainvisualFunc(){
+	var main_visual_container = null;
+	if($(".main-visual-container").length){
+		main_visual_container = new Swiper(".main-visual-container", {
+			speed : 800,
+			loop : true,
+			pagination: {
+				clickable: true,
+				el: ".swiper-pagination.main_visual_paging",
+			},
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false
+			},
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			}
+		});
+	}
+}
+
 function subvisualFunc(){
 	var sub_visual_container = null;
 	if($(".sub-visual-container").length){
