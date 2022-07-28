@@ -353,6 +353,7 @@ select.form_select{height:30px;font-size:13px;border:1px solid #d8d8d8;color:#55
 .nodata_para{}
 .ing_boxitem{display:inline-block;background:#919191;color:#fff;min-width:80px;text-align: center;border-radius:30px;padding:7px 10px;box-sizing: border-box;}
 .ing_boxitem.type2{border-radius:0;background:#bbb;}
+.ing_boxitem.ctype2{background:#00a65a;}
 .data_table tbody td:last-of-type{border-right:0;}
 .data_thtext{display:inline-block;font-size:14px;font-weight:500;}
 .data_tdtext{font-size:13px;color:#555;}
