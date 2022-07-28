@@ -7,7 +7,7 @@
 
 /* 레이아웃 */
 .front_body{}
-.page_wrap{min-width:1100px;position:relative;}
+.page_wrap{min-width:1280px;position:relative;}
 .page_wrap:before{}
 .ptem_z:after{display:block;content:'';filter:alpha(opacity=100);opacity:1;transition-duration:.35s;transition-timing-function: ease-out;width:1px;height:calc(100% - 56px);background:#d9dee4;position:fixed;top:56px;left:231px;}
 body ::-webkit-scrollbar {width: 10px;}

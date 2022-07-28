@@ -47,11 +47,13 @@
 						<div class="ptcont_contlow">
 							<div class="pctab_hlist_w">
 								<div class="pctab_hlist">
-									<a href="#" class="pctab active"><span class="pctab_in">전체보기</span></a>
+									<a href="#" class="pctab active"><span class="pctab_in">접수대기</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">접수완료</span></a>
+									<!-- <a href="#" class="pctab active"><span class="pctab_in">전체보기</span></a>
 									<a href="#" class="pctab"><span class="pctab_in">의료자문</span></a>
 									<a href="#" class="pctab"><span class="pctab_in">의료분석</span></a>
 									<a href="#" class="pctab"><span class="pctab_in">의료번역</span></a>
-									<a href="#" class="pctab"><span class="pctab_in">동시감정</span></a>
+									<a href="#" class="pctab"><span class="pctab_in">동시감정</span></a> -->
 								</div>
 							</div>
 							<!-- sort -->
@@ -87,7 +89,15 @@
 										</div>
 									</div>
 									<div class="sort_item inline_item_group type2">
-										<div class="inline_item"><select class="fsel ready_fsel"><option value="0">선택</option><option>전체</option></select></div>
+										<div class="inline_item">
+											<select class="fsel ready_fsel">
+												<option value="0">선택</option>
+												<option>의료자문</option>
+												<option>의료분석</option>
+												<option>의료번역</option>
+												<option>동시감정</option>
+											</select>
+										</div>
 										<div class="inline_item"><select class="fsel ready_fsel"><option value="0">접수번호</option><option>전체</option></select></div>
 										<div class="inline_item">
 											<div class="search_field">
@@ -112,10 +122,10 @@
 										<col style="width:6%;">
 										<col style="width:6%;">
 										<col style="width:6%;">
-										<col style="width:9%;">
+										<col style="width:10%;">
+										<col style="width:10%;">
 										<col style="width:6%;">
-										<col style="width:6%;">
-										<col style="width:6%;">
+										<col style="width:8%;">
 										<col style="width:6%;">
 									</colgroup>
 									<thead>
@@ -130,28 +140,28 @@
 											<th><span class="th_item">담당의사</span></th>
 											<th><span class="th_item">보험사</span></th>
 											<th><span class="th_item">등록일</span></th>
-											<th><span class="th_item">미리보기</span></th>
-											<th><span class="th_item">결제방법</span></th>
+											<th><span class="th_item">당사 건처리 담당자명</span></th>
+											<th><span class="th_item">경과기일</span></th>
 											<th><span class="th_item">진행상태</span></th>
-											<th><span class="th_item">명령</span></th>
+											<th><span class="th_item">메모기능</span></th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
 											<td><span class="td_data">의료자문</span></td>
-											<td><span class="td_data">ABCD2022070800037</span></td>
-											<td><span class="td_data">요추 제1번 골절</span></td>
+											<td><a href="javascript:;" class="td_data_link">ABCD2022070800037</a></td>
+											<td><a href="javascript:;" class="td_data_link">요추 제1번 골절</a></td>
 											<td><span class="td_data">KCA손해사정</span></td>
 											<td><span class="td_data">홍길동</span></td>
 											<td><span class="td_data">박*경</span></td>
 											<td><span class="td_data">장세연</span></td>
 											<td><span class="td_data">교보생명</span></td>
 											<td><span class="td_data">2022-07-08 18:16</span></td>
-											<td><a href="javascript:;" class="btn_text">미리보기</a></td>
-											<td><span class="td_data">후불</span></td>
-											<td><span class="ing_box design_ing">회신진행중</span></td>
-											<td class="ptype2"><a href="javascript:;" class="btn_box small color_type_a"><span class="btn_box_intext">상세보기</span></a></td>
+											<td><span class="td_data">홍길동</span></td>
+											<td><span class="td_data">10일</span></td>
+											<td><span class="ing_box design_color_03">접수대기</span></td>
+											<td><span class="ing_text design_color_02">메모</span></td>
 										</tr>
 										<tr>
 											<td class="nodata_td" colspan="14">

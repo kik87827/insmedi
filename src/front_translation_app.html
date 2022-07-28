@@ -32,7 +32,7 @@
 										<div class="form_vertical_content_wrap">
 											<!-- 내용 -->
 											<div class="form_tb_w">
-												<table class="form_tb dtype2">
+												<table class="form_tb">
 													<tbody>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">담당자</span></th>
@@ -101,7 +101,7 @@
 										<div class="form_vertical_content_wrap">
 											<!-- 내용 -->
 											<div class="form_tb_w">
-												<table class="form_tb dtype2">
+												<table class="form_tb dtype2 ftype2">
 													<tbody>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">자문환자명</span></th>
@@ -109,7 +109,7 @@
 																<input type="text" class="form_input instyle_wid">
 															</td>
 															<th><span class="etri reverse">*</span><span class="form_label">생년월일</span></th>
-															<td>
+															<td colspan="3">
 																<div class="tdinner_item_wrap">
 																	<div class="tdinner_item"><input type="text" class="form_input instyle_wid"></div>
 																	<div class="tdinner_item">
@@ -120,26 +120,35 @@
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">주요진단명</span></th>
-															<td colspan="3">
+															<td colspan="5">
 																<input type="text" class="form_input">
 															</td>
 														</tr>
-														<tr>
+														<!-- <tr>
 															<th><span class="etri reverse">*</span><span class="form_label">보험사담당자/사고번호</span></th>
 															<td colspan="3">
 																<input type="text" class="form_input">
 																<p class="etri_para"><span class="etri_para_in">보험사담당자/사고번호가 없을 경우 반드시 ‘없음’으로 입력해 주세요.</span></p>
 															</td>
+														</tr> -->
+														<tr>
+															<th><span class="etri reverse">*</span><span class="form_label">보험사담당자명</span></th>
+															<td><input type="text" class="form_input"></td>
+															<th><span class="etri reverse">*</span><span class="form_label">사고번호</span></th>
+															<td><input type="text" class="form_input"></td>
+															<th><span class="etri reverse">*</span><span class="form_label">전화번호</span></th>
+															<td><input type="text" class="form_input"></td>
 														</tr>
 														<tr>
 															<th><span class="etri reverse">*</span><span class="form_label">쟁점사항 및 기타</span></th>
-															<td colspan="3">
+															<td colspan="5">
 																<textarea rows="10" cols="10" class="textarea_item"></textarea>
 															</td>
 														</tr>
 													</tbody>
 												</table>
 											</div>
+											<p class="etri_para mt10"><span class="etri_para_in">보험사담당자/사고번호가 없을 경우 반드시 ‘없음’으로 입력해 주세요.</span></p>
 											<!-- // 내용 -->
 										</div>
 									</div>
@@ -154,7 +163,7 @@
 															<th><span class="form_label">질문</span></th>
 															<td>
 																<div class="tdinner_item_wrap">
-																	<div class="tdinner_long"><input type="text" class="form_input"></div>
+																	<div class="tdinner_long"><textarea rows="10" cols="10" class="textarea_item"></textarea></div>
 																	<div class="tdinner_short">
 																		<a href="javascript:;" class="btn_smbox">+ 추가</a>
 																	</div>
@@ -180,7 +189,7 @@
 								<div class="scform_content_wrap">
 									<!-- 내용 -->
 									<div class="form_tb_w">
-										<table class="form_tb dtype2">
+										<table class="form_tb dtype2 widtype2">
 											<tbody>
 												<tr>
 													<th><span class="form_label">진단서</span></th>
@@ -200,7 +209,7 @@
 										</table>
 									</div>
 									<div class="form_tb_w">
-										<table class="form_tb dtype2">
+										<table class="form_tb dtype2 widtype2">
 											<tbody>
 												<tr>
 													<th>
@@ -223,12 +232,12 @@
 										</table>
 									</div>
 									<div class="form_tb_w">
-										<table class="form_tb dtype2">
+										<table class="form_tb dtype2 widtype2">
 											<tbody>
 												<tr>
 													<th>
 														<span class="form_label">필름</span>
-														<p class="form_label_sub">CD에 저장된 파일 및 폴더를 <br>모두 첨부</p>	
+														<p class="form_label_sub">CD에 저장된 파일 및 폴더를 모두 첨부</p>	
 													</th>
 													<td>
 														<div style="display:flex;align-items: center;justify-content: center;background:#ddd;height:300px;">
@@ -240,7 +249,7 @@
 										</table>
 									</div>
 									<div class="form_tb_w">
-										<table class="form_tb dtype2">
+										<table class="form_tb dtype2 widtype2">
 											<tbody>
 												<tr>
 													<th><span class="form_label">기타</span></th>
