@@ -110,7 +110,7 @@ body ::-webkit-scrollbar-track {background-color: transparent;border-radius: 10p
 .page_single_wrap{min-height:calc(100vh - 56px);display:flex;align-items: center;justify-content: center;flex-direction: column;}
 .page_single2_wrap{min-height:calc(100vh - 56px);}
 
-.ptfooter_wrap{border-top:1px solid #d9dee4;}
+.ptfooter_wrap{border-top:1px solid #d9dee4;background:#fff;position:fixed;bottom:0;left:0;width:100%;z-index:10;}
 .ptfooter_both{display:flex;justify-content: space-between; height:42px;padding:0 25px;align-items: center;}
 .ptcopy_zone{font-weight:350;}
 .ptcopy_intext{}
