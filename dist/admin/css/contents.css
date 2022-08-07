@@ -418,6 +418,51 @@ td.nodata_td{padding:30px;background:#fff !important;}
 .formviewer_tb.atype2 tbody > tr > th{text-align:center;}
 .fv_data{display:inline-block;font-size:14px;line-height:1.4;color:#777}
 
+
+/* [loading] layout.css이나 reset.css 둘중 아무 파일 하단에 추가  */
+.loading_w{z-index:100000;position:fixed;top:0;left:0;width:100%;height:100%;display:flex;align-items: center;justify-content: center;}
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #8d654e;
+  width: 60px;
+  height: 60px;
+  
+  margin:0 auto;
+  -webkit-animation: spin 1.1s linear infinite; /* Safari */
+  animation: spin 1.1s linear infinite;
+}
+.loader.type2{
+  border-width: 2px;
+  width: 40px;
+  height: 40px;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  /* error */
+.front_body.error_body{background:#f6f6f6;}
+.page_wrap.error_wrap{padding:256px 30px;display:flex; justify-content: center;}
+.error_item{display:flex; align-items: center;}
+.error_cellico{text-align:center;color:#1a1a1a;}
+.error_cellico:before{display:block;content:'!';width:80px;height:80px;border-radius:100%;border:5px solid #8d654e;font-size:50px;line-height:80px;font-weight:700;color:#8d654e;}
+.error_ico_para{font-size:39px;font-weight:700;margin-top:5px;color:#8d654e;}
+.error_celltext{padding-left:42px;}
+.error_text{font-size:24px;color:#1a1a1a;}
+.error_copy01{font-size:30px;font-weight:700;}
+.error_copy02{font-size:24px;line-height:1.4;margin-top:5px;}
+.error_copy03{margin-top:20px;font-size:22px;}
+.error_copy03 strong{font-weight:700;}
+/* // error */
+
+
 /* design */
 .block_vitem_w{}
 .block_vitem{margin-bottom:30px;}
