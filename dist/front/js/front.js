@@ -132,3 +132,98 @@ function subvisualFunc(){
 		});
 	}
 }
+
+
+
+function DesignModal(option) {
+    this.message = option.message;
+    this.domHtml = document.querySelector("html");
+    this.domBody = document.querySelector("body");
+    this.pagewrap = document.querySelector(".page_wrap");
+    this.design_modal_wrap = null;
+    this.btn_dmsmidentify = null;
+    this.btn_dmsmcancel = null;
+    this.duration = option.duration !== undefined ? option.duration : 400;
+
+    this.initShow(option);
+}
+
+DesignModal.prototype.initShow = function (option) {
+    var innerPublish = '';
+	var objThis = this;
+    innerPublish += "<div class='design_modal_wrap'>";
+    innerPublish += "  <div class='bg_design_modal'></div>";
+    innerPublish += "  <div class='design_modal_tb'>";
+    innerPublish += "      <div class='design_modal_td'>";
+    innerPublish += "          <div class='design_modal'>";
+    innerPublish += "              <div class='design_modal_cont_w'><div class='design_modal_text'></div></div>";
+    innerPublish += "              <div class='btn_dmsm_wrap'>";
+    innerPublish += "                  <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmidentify'>확인</a>";
+    if (option.type === "confirm") {
+        innerPublish += "              <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmcancel'>취소</a>";
+    }
+    innerPublish += "              </div>";
+    innerPublish += "          </div>";
+    innerPublish += "      </div>";
+    innerPublish += "  </div>";
+    innerPublish += "</div>";
+    this.modalparent = document.createElement('div');
+    this.pagewrap.appendChild(this.modalparent);
+    this.modalparent.classList.add("design_modal_insert_wrap");
+    this.modalparent.innerHTML = innerPublish;
+
+    if (option.type === "confirm" || option.type === "alert") {
+        this.design_modal_text = document.querySelector(".design_modal_text");
+        this.btn_dmsmidentify = document.querySelector(".btn_dmsmidentify");
+        this.design_modal_text.innerHTML = option.message;
+    }
+    if (option.type === "confirm") {
+        this.btn_dmsmcancel = document.querySelector(".btn_dmsmcancel");
+    }
+    this.pagewrap.style.zIndex = 0;
+    this.domBody.setAttribute("data-scr", window.pageYOffset);
+    this.domBody.style.marginTop = -window.pageYOffset+"px";
+    this.domHtml.classList.add("touchDis");
+    this.design_modal_wrap = document.querySelector(".design_modal_wrap");
+    this.closetrigger = document.querySelectorAll(".close_dmtrigger");
+	this.design_modal_wrap.classList.add("active");
+	setTimeout(function(){
+		objThis.design_modal_wrap.classList.add("motion");
+	},30);
+    this.bindEvent(option);
+}
+DesignModal.prototype.removeHide = function () {
+	var objThis = this;
+	this.design_modal_wrap.classList.remove("motion");
+	setTimeout(function(){
+		objThis.design_modal_wrap.classList.remove("active");
+    	document.querySelector(".design_modal_insert_wrap").remove();
+		objThis.design_modal_wrap.remove();
+		objThis.domHtml.classList.remove("touchDis");
+		objThis.domBody.style.marginTop = 0;
+		
+		window.scrollTo(0, Number(objThis.domBody.getAttribute("data-scr")));
+	},530);
+}
+DesignModal.prototype.bindEvent = function (option) {
+    var objThis = this;
+    for (var i = 0; i < this.closetrigger.length; i++) {
+        this.closetrigger[i].addEventListener("click", function () {
+            objThis.removeHide();
+        }, false);
+    }
+    if (this.btn_dmsmidentify !== null) {
+        this.btn_dmsmidentify.addEventListener("click", function () {
+            if (option.identify_callback !== undefined) {
+                option.identify_callback();
+            }
+        }, false);
+    }
+    if (this.btn_dmsmcancel !== null) {
+        this.btn_dmsmcancel.addEventListener("click", function () {
+            if (option.cancel_callback !== undefined) {
+                option.cancel_callback();
+            }
+        }, false);
+    }
+}
