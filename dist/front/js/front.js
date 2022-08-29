@@ -61,8 +61,10 @@ function headerFunc(){
 	$htop_gnb_list.hoverIntent({
 		over : function(){
 			$gnb_two_dep_w.show();
-			$gnb_bg.show();
+			// $gnb_bg.show();
 			setTimeout(function(){
+				if($gnb_bg.is(":visible")){
+				}
 				$gnb_two_dep_w.css({height : maxHeightValue});
 				$gnb_bg.css({height : maxHeightValue - 2});
 			},30);
@@ -71,7 +73,7 @@ function headerFunc(){
 		out : function(){
 
 		},
-		interval : 30
+		interval : 50
 	});
 
 	$htop_gnb_list_w.hoverIntent({
@@ -81,11 +83,8 @@ function headerFunc(){
 		out : function(){
 			$htop_gnb_li.find(".nav_two_wrap").css({height : 0});
 			$gnb_bg.css({height : 0});
-			setTimeout(function(){
-				$gnb_bg.hide();
-			},510);
 		},
-		interval : 30
+		interval : 50
 	});
 }
 
