@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1100" />
+		<link rel="shortcut icon" type="image/x-icon" href="./front/images/common/favicon.ico">
+		<link rel="stylesheet" href="./front/css/reset.css" />
+		<link rel="stylesheet" href="./front/css/swiper.min.css" />
+		<link rel="stylesheet" href="./front/css/jquery-ui.css" />
+		<link rel="stylesheet" href="./front/css/layout.css" />
+		<link rel="stylesheet" href="./front/css/contents.css" />
+		<script src="./front/js/jquery-1.12.4.min.js"></script>
+		<script src="./front/js/swiper.min.js"></script>
+		<script src="./front/js/jquery-ui.js"></script>
+		<script src="./front/js/hoverIntent.js"></script>
+		<script src="./front/js/front.js"></script>
+		<title>의료자문 - 인스메디</title>
+	</head>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+
+		<section class="mid_wrap">
+			<button type="button" class="btn_guide" id="btn_callLayer">레이어 호출</button>
+			<script>
+				$(function() {
+					$("#btn_callLayer").on("click", function() {
+						Insmedi.dimLayerShow({
+							target: "#popup_templete"
+						});
+					});
+					Insmedi.dimLayerShow({
+						target: "#popup_templete"
+					});
+				});
+			</script>
+			<!-- 레이어팝업 -->
+			<div class="dimlayer_z" id="popup_templete">
+				<div class="fullpop_dim"></div>
+				<div class="fullpop_item" style="width:400px;">
+					<div class="fullpop_titlow">
+						<h4 class="fullpop_title">비밀번호 확인</h4>
+					</div>
+					<div class="fullpop_contlow">
+						<div class="fullpop_contlow_in">
+							<input type="password" class="form_input" placeholder="비밀번호를 입력하세요.">
+						</div>
+					</div>
+					<div class="btn_fullsubmit_w">
+						<a href="#" class="btn_quadobj dtype2 closetrigger">확인</a><!-- closetrigger 클릭시 닫음 -->
+						<a href="#" class="btn_quadobj closetrigger">닫기</a><!-- closetrigger 클릭시 닫음 -->
+					</div>
+					<button type="button" class="btn_layerclose"></button>
+				</div>
+			</div>
+			<!-- // 레이어팝업 -->
+		</section>
+	</div>
+</body>
+
+</html>

@@ -226,3 +226,119 @@ DesignModal.prototype.bindEvent = function (option) {
         }, false);
     }
 }
+
+
+var Insmedi = Insmedi || {};
+Insmedi = {
+	/* 페이지 로드함수 */
+	init : function(){
+		var funcThis = this;
+		$(function(){
+			if(touchstart){
+				$("html").addClass("touchmode");
+			}else{
+				$("html").removeClass("touchmode");
+			}
+			funcThis.dimLayerControl();
+		});
+		$(window).on("load",function(){
+			
+		});
+	},
+	dimLayerControl : function(){
+		var $modal = $(".dimlayer_z");
+		if($modal.length===0){return;}
+		
+		
+		var objThis = this;
+		$modal.on("click",".btn_layerclose,.closetrigger,.fullpop_dim",function(e){
+			var $this = $(this),
+				$t_p = $this.parents(".dimlayer_z");
+			e.preventDefault();
+			objThis.dimLayerHide({ 
+				target : $t_p,
+				closeCallback : function(){
+					
+				}
+			});
+		});
+	},
+	dimLayerShow : function(option){
+		var touchIs = "ontouchstart" in window,
+			$modal = null,
+			$target = null,
+			$page_wrap = null,
+			$fullpop_item = null,
+			$fullpop_titlow = null,
+			$fullpop_contlow = null,
+			$page_wrap = null,
+			$res_value = 0;
+		
+		$(function(){
+			$modal = $(".dimlayer_z");
+			
+			$target = $(option.target);
+			$page_wrap = $(".page_wrap");
+			
+			
+			if($modal.length===0){return;}
+			$modal.removeClass("active");
+			$target.addClass("active");
+			setTimeout(function(){
+				$target.addClass("motion");
+			},30);
+			$page_wrap.css({"z-index":0});
+			$page_wrap.append($target);
+			heightcheck();
+			if ($target.hasClass("fulltype")) {
+				$fullpop_titlow = $target.find(".fullpop_titlow");
+				$fullpop_contlow = $target.find(".fullpop_contlow");
+				$fullpop_item = $target.find(".fullpop_item");
+			}
+
+			if("openCallback" in option){
+				option.openCallback();
+			}
+			function heightcheck(){
+				if(touchIs){
+					$("body").data("data-scr",$(window).scrollTop()).css({"margin-top":-$(window).scrollTop()}).append($target);
+					$("html").addClass("touchDis");
+				}
+			}
+		});
+	},
+	dimLayerHide : function(option){
+		var touchIs = "ontouchstart" in window,
+			$modal = null,
+			$target = null,
+			$t_box = null;
+			
+		$(function(){
+			$modal = $(".dimlayer_z");
+			$target = $(option.target);
+			$t_box = $target.find(".layer_box");
+			$t_td = $target.find(".dimlayer_td");
+			$t_tpt = parseInt($t_td.css("padding-top"));
+			$t_tpb = parseInt($t_td.css("padding-bottom"));
+			
+			if($modal.length===0){return;}
+			$target.removeClass("motion");
+			setTimeout(function(){
+				$target.removeClass("active");
+				$(".page_wrap").css({"z-index":""});
+				$("html,body").removeClass("touchDis touchDis2");
+				scrollEnd();
+				if("closeCallback" in option){
+					option.closeCallback();
+				}
+			},530);
+			function scrollEnd(){
+				if(touchIs){
+					$("body").css({"margin-top":0});
+					window.scrollTo(0,Number($("body").data("data-scr")));
+				}
+			}
+		});
+	}
+};
+Insmedi.init();
