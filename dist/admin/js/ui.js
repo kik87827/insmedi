@@ -76,7 +76,9 @@ Insmedi = {
 		});
 	},
 	layoutFunc : function(){
-		var $ptog_fold = $("#ptog_fold"),
+
+		var $page_wrap = $(".page_wrap"),
+			$ptog_fold = $("#ptog_fold"),
 			$ptleft_z = $(".ptleft_z"),
 			$ptleft_in = $(".ptleft_in"),
 			$ptog_open = $("#ptog_open"),
@@ -84,7 +86,21 @@ Insmedi = {
 			$hd_util_item = $(".hd_util_item"),
 			$hd_util_bullon = $(".hd_util_bullon");
 		
-		
+		var window_left = $(window).scrollLeft();
+		modeAction();
+		$(window).on("scroll",function(){
+			window_left = $(window).scrollLeft();
+			modeAction();
+		});
+		function modeAction(){
+			if(window_left==0){
+				$page_wrap.removeClass("scroll_mode");
+			}else{
+				$page_wrap.addClass("scroll_mode");
+			}
+		}
+
+
 		$ptog_fold.on("click",function(){
 			$(this).hide();
 			$ptog_open.show();
@@ -233,8 +249,6 @@ Insmedi = {
 	}
 };
 Insmedi.init();
-
-
 
 
 

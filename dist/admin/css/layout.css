@@ -10,6 +10,7 @@
 .page_wrap{min-width:1280px;position:relative;}
 .page_wrap:before{}
 .ptem_z:after{display:block;content:'';filter:alpha(opacity=100);opacity:1;transition-duration:.35s;transition-timing-function: ease-out;width:1px;height:calc(100% - 56px);background:#d9dee4;position:fixed;top:56px;left:231px;}
+.page_wrap.scroll_mode .ptem_z:after{position:absolute;}
 body ::-webkit-scrollbar {width: 10px;}
 body ::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;background-clip: padding-box;border: 2px solid transparent;}
 body ::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 5px transparent;}
