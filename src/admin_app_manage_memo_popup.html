@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	@@include('./include/admin_head.html')
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+
+		<section class="mid_wrap">
+			<button type="button" class="btn_guide" id="btn_callLayer">레이어 호출</button>
+			<script>
+				$(function() {
+					$("#btn_callLayer").on("click", function() {
+						Insmedi.dimLayerShow({
+							target: "#popup_templete"
+						});
+					});
+					Insmedi.dimLayerShow({
+						target: "#popup_templete"
+					});
+				});
+			</script>
+			<!-- 레이어팝업 -->
+			<div class="dimlayer_z fulltype" id="popup_templete">
+				<div class="fullpop_dim"></div>
+				<div class="fullpop_item">
+					<div class="fullpop_titlow">
+						<h4 class="fullpop_title">메모</h4>
+					</div>
+					<div class="fullpop_contlow">
+						<div class="fullpop_contlow_in">
+							<div class="btn_group mb10 atype3">
+								<a href="javascript:;" class="btn_box color_type_a medium ico_plus"><span class="btn_box_intext">추가</span></a>
+							</div>
+							<table class="formviewer_tb atype2">
+								<colgroup>
+									<col style="width: 20%">
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><div class="fv_label_w"><span class="fv_label">내용</span></div></th>
+										<td class="ptype4">
+											<div class="roof_item_group">
+												<div class="roof_item flex_item">
+													<textarea rows="10" cols="10" class="textarea_item flex_long"></textarea>
+													<div class="flex_short ml10"><a href="javascript:;" class="btn_box color_type_b medium ico_minus"><span class="btn_box_intext">삭제</span></a></div>
+												</div>
+												<div class="roof_item flex_item">
+													<textarea rows="10" cols="10" class="textarea_item flex_long"></textarea>
+													<div class="flex_short ml10"><a href="javascript:;" class="btn_box color_type_b medium ico_minus"><span class="btn_box_intext">삭제</span></a></div>
+												</div>
+												<div class="roof_item flex_item">
+													<textarea rows="10" cols="10" class="textarea_item flex_long"></textarea>
+													<div class="flex_short ml10"><a href="javascript:;" class="btn_box color_type_b medium ico_minus"><span class="btn_box_intext">삭제</span></a></div>
+												</div>
+												<div class="roof_item flex_item">
+													<textarea rows="10" cols="10" class="textarea_item flex_long"></textarea>
+													<div class="flex_short ml10"><a href="javascript:;" class="btn_box color_type_b medium ico_minus"><span class="btn_box_intext">삭제</span></a></div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="btn_fullsubmit_w">
+						<a href="#" class="btn_quadobj closetrigger">저장</a><!-- closetrigger 클릭시 닫음 -->
+					</div>
+					<button type="button" class="btn_layerclose"></button>
+				</div>
+			</div>
+			<!-- // 레이어팝업 -->
+		</section>
+	</div>
+</body>
+
+</html>

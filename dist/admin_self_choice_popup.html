@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1280" />
+	<link rel="stylesheet" href="./admin/css/reset.css" />
+	<link rel="stylesheet" href="./admin/css/layout.css" />
+	<link rel="stylesheet" href="./admin/css/jquery-ui.css" />
+	<link rel="stylesheet" href="./admin/css/contents.css" />
+	<script src="./admin/js/jquery-1.12.4.min.js"></script>
+	<script src="./admin/js/iscroll.js"></script>
+	<script src="./admin/js/jquery-ui.js"></script>
+	<script src="./admin/js/ui.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+
+		<section class="mid_wrap">
+			<button type="button" class="btn_guide" id="btn_callLayer">레이어 호출</button>
+			<script>
+				$(function() {
+					$("#btn_callLayer").on("click", function() {
+						Insmedi.dimLayerShow({
+							target: "#popup_templete"
+						});
+					});
+					Insmedi.dimLayerShow({
+						target: "#popup_templete"
+					});
+				});
+			</script>
+			<!-- 레이어팝업 -->
+			<div class="dimlayer_z fulltype" id="popup_templete">
+				<div class="fullpop_dim"></div>
+				<div class="fullpop_item">
+					<div class="fullpop_titlow">
+						<h4 class="fullpop_title">자문 질의 선택</h4>
+					</div>
+					<div class="fullpop_contlow">
+						<div class="fullpop_contlow_in">
+							<div class="sort_container mtype2">
+								<div class="sort_item flex_item">
+									<select class="fsel flex_long" style="min-width:150px">
+										<option value="0">전체</option>
+										<option value="1">옵션2</option>
+									</select>
+									<div class="flex_short ml10"><a href="#" class="btn_box color_type_a small_b2"><span class="btn_box_intext">검색</span></a></div>
+								</div>
+							</div>
+							<div class="list_table_w mt10">
+								<table class="list_table">
+									<colgroup>
+										<col style="width:5%;">
+										<col style="width:12%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="ptype2"><span class="th_item"><input type="checkbox" class="chkrd_s"></span></th>
+											<th><span class="th_item">코드명</span></th>
+											<th><span class="th_item">코드값</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">백내장</span></td>
+											<td class="has_link"><a href="#" class="td_link">질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의</a></td>
+										</tr>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">백내장</span></td>
+											<td class="has_link"><a href="#" class="td_link">질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의</a></td>
+										</tr>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">백내장</span></td>
+											<td class="has_link"><a href="#" class="td_link">질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의</a></td>
+										</tr>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">백내장</span></td>
+											<td class="has_link"><a href="#" class="td_link">질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의</a></td>
+										</tr>
+										<tr>
+											<td class="ptype2"><input type="checkbox" class="chkrd_s"></td>
+											<td><span class="td_data">백내장</span></td>
+											<td class="has_link"><a href="#" class="td_link">질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의질의</a></td>
+										</tr>
+										<tr>
+											<td class="nodata_td" colspan="3">
+												<p class="nodata_para">등록된 자료가 없습니다.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- paging -->
+							<div class="paging_w">
+								<a href="#" class="btn_pn prev01"><span class="hdtext">처음</span></a>
+								<a href="#" class="btn_pn prev02"><span class="hdtext">이전</span></a>
+								<ul class="pagnum_list">
+									<li class="active"><a href="#" class="pagnum">1</a></li>
+									<li><a href="#" class="pagnum">2</a></li>
+									<li><a href="#" class="pagnum">3</a></li>
+									<li><a href="#" class="pagnum">4</a></li>
+									<li><a href="#" class="pagnum">5</a></li>
+									<li><a href="#" class="pagnum">6</a></li>
+									<li><a href="#" class="pagnum">7</a></li>
+									<li><a href="#" class="pagnum">8</a></li>
+									<li><a href="#" class="pagnum">9</a></li>
+									<li><a href="#" class="pagnum">10</a></li>
+								</ul>
+								<a href="#" class="btn_pn next01"><span class="hdtext">다음</span></a>
+								<a href="#" class="btn_pn next02"><span class="hdtext">끝</span></a>
+							</div>
+							<!-- // paging -->
+						</div>
+					</div>
+					<div class="btn_fullsubmit_w">
+						<a href="#" class="btn_quadobj dtype2 closetrigger">저장</a><!-- closetrigger 클릭시 닫음 -->
+					</div>
+					<button type="button" class="btn_layerclose"></button>
+				</div>
+			</div>
+			<!-- // 레이어팝업 -->
+		</section>
+	</div>
+</body>
+
+</html>
